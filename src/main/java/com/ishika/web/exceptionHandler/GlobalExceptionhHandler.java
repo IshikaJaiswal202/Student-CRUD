@@ -7,11 +7,13 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import com.ishika.web.bean.ApiResponse;
 import com.ishika.web.exceptions.ResourceNotFoundExceptions;
-
+// used to handle request
 @RestControllerAdvice
 public class GlobalExceptionhHandler {
 
-	 @ExceptionHandler(ResourceNotFoundExceptions.class)
+	
+//   use to handle the custom exception
+	@ExceptionHandler(ResourceNotFoundExceptions.class)
 	 public ResponseEntity<ApiResponse> resourceNotFoundExceptions(ResourceNotFoundExceptions e)
 	 {
 		 ApiResponse response=ApiResponse.builder()

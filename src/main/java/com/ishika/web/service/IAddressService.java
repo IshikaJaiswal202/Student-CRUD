@@ -14,4 +14,9 @@ public interface IAddressService
 
 	public Address getAddressById(Integer id);
 
+	public ApiResponse deleteAddressById(Integer id);
+
+	public ApiResponse updateAddress(Integer id, Address address);
+
+
 }

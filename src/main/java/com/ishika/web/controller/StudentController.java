@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -57,7 +59,7 @@ public class StudentController
 		return  new ResponseEntity<ApiResponse>(response,HttpStatus.OK);
 	}
 	
-	@PatchMapping("/{id}")
+	@PutMapping("/{id}")
 	public ResponseEntity<ApiResponse> updateStudnetByID(@PathVariable Integer id ,@RequestBody Student student)
 	{
 		ApiResponse response=service.updateStudnetByID(id,student);

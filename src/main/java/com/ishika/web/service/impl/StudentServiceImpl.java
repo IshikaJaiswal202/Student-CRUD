@@ -14,6 +14,7 @@ import com.ishika.web.repo.IStudentRepo;
 import com.ishika.web.service.IStudentService;
 
 import jakarta.transaction.Transactional;
+//it contain all business logic related to student
 @Service
 public class StudentServiceImpl implements IStudentService {
 
